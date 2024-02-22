@@ -1,0 +1,56 @@
+:root {
+    --light-pink: #ff69b4; 
+    --gray: #6c757d;
+    --teal-bg: #30e3ca; 
+}
+
+* {
+    box-sizing: border-box;
+    /* border: dotted 1px red; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-color: var(--teal-bg);
+}
+
+nav {
+    background-color: #fff; 
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.home-icon {
+    margin-right: 0.5em;
+}
+
+.home-icon,
+nav a[href*='invoices'] {
+    color: var(--light-pink);
+}
+
+/* Style for the breadcrumb links and separators (chevrons) */
+nav a,
+nav span {
+    color: var(--gray);
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: var(--light-pink);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
